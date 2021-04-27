@@ -4,6 +4,7 @@ services:
     # Etherpad: real-time collaborative document editing
     etherpad:
         image: etherpad/etherpad:1.8.6
+        container_name: etherpad
         restart: ${RESTART_POLICY}
         environment:
             - TITLE=${ETHERPAD_TITLE}
